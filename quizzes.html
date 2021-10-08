@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZES</title>
+</head>
+<body>
+    <script>
+        //WRITING TO HTML DOCUMENT
+        //What will be the output of the code below
+        var food = "Rice"
+        document.write("I wish to eat " + food + " today");
+
+
+        //EQUIVALENCE OPERATOR (==, ===)
+        //Will the output of the code below be True or False?
+        var name = "Abel"
+        var othername = "abel"
+        document.write(name === othername); //False
+
+        //Will the output of the code below be True or False?
+        var num1 = 45
+        var num2 = "45"
+        document.write(num1 == num2); //True
+        //Will the output of the code below be True or False?
+        document.write(num1 === num2); //False
+
+
+        //"NOT EQUAL TO" OPERATOR (!=)
+        //Will the output of the code below be True or False?
+        document.write(name != othername); //True
+
+
+        //"LOGICAL AND" OPERATOR (&&)
+        //Will the output of the code below be True or False?
+        document.write(name === othername && num1 == num2); //False
+
+        //Will the output of the code below be True or False?
+        document.write(name != othername && num1 == num2); //True
+
+
+        //"LOGICAL OR" OPERATOR (||)
+        //Will the output of the code below be True or False?
+        document.write(name === othername || num1 == num2); //True
+
+
+        //LESS THAN & GREATER THAN (<, >)
+        //Will the output of the code below be True or False?
+        var x = 10
+        var y = 13
+        document.write(y < x); //False
+
+        //Will the output of the code below be True or False?
+        document.write(num1 === num2 && x < y); //False
+
+
+        //"NOT" OPERATOR (!)
+        //Will the output of the code below be True or False?
+        document.write(!true); //False
+
+        //Will the output of the code below be True or False?
+        document.write(!false); //True
+
+        //Will the output of the code below be True or False?
+        document.write(!(y > 10)); //False
+
+
+        //FUCTION
+        //What will be the output of the code below
+        function operator(firstNumber, secondNumber){
+            return firstNumber % secondNumber;
+        }
+        document.write(operator(25, 4));
+
+        //Covert the above function into an arrow function
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Fetch API</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h4 class="mb-3">Sending JavaScript Http Requests with fetch() API</h4>
+        <button class="btn btn-primary" id="get-btn">Get</button>
+        <!-- <button class="btn btn-primary" id="post-btn">Post</button> -->
+    </div>
+
+    <script>
+        var getBtn = document.getElementById("get-btn");
+        // var postBtn = document.getElementById("post-btn");
+
+        var getData = () => {
+            fetch('https://reqres.in/api/users')
+            .then(response => {return response.json()})
+            .then(responseData => {console.log(responseData)})
+        }
+
+        // var postData = () => {
+        //     fetch({method: 'POST', body: JSON.stringify(data), headers: data ? {'Content-Type': 'application/json'} : {}},'https://reqres.in/api/register', {email: 'eve.holt@reqres.in', password: 'pistol'})
+        //     .then(response => {return response.json()})
+        //     .then(responseData => {console.log(responseData)})
+        // }
+
+        getBtn.addEventListener('click', getData);
+        // postBtn.addEventListener('click', postData);
+    </script>
+</body>
+</html>

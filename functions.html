@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!-- Function Video found on 1:04:00 of "An Introduction to JavaScript" video -->
+
+    <h1 id="header">HELLO</h1>
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button><br><br>
+
+    <script>
+        function red(){
+            document.getElementById("header").innerHTML = "Red";
+            document.getElementById("header").style.color = "Red"
+        }
+
+        function green(){
+            document.getElementById("header").innerHTML = "Green";
+            document.getElementById("header").style.color = "Green"
+        }
+
+        function blue(){
+            document.getElementById("header").innerHTML = "Blue";
+            document.getElementById("header").style.color = "Blue"
+        }
+    </script>
+
+
+    <script>
+        //A function that adds two numbers together
+        function addNumbers(firstNumber, secondNumber){
+            return firstNumber + secondNumber;
+        }
+        //Call the function on our HTML document
+        document.write(addNumbers(2, 3));
+        document.write("<br>"); //This is just to add a line break
+        document.write(addNumbers(20, 7));
+        document.write("<br>");
+        //NOTES: (firstNumber, secondNumber) are called parameters while (2, 3), (20, 7) are called arguments
+
+
+        //ARROW FUNCTION AND FUNCTION EXPRESSIONs
+        //Conventional Function or Function declaration
+        function lessNumbers(num1, num2){
+            return num1 - num2;
+        }
+        document.write(lessNumbers(5, 3));
+        document.write("<br>");
+
+        //Arrow Function
+        var lessNumbers = (num1, num2) => {
+            return num1 - num2;
+        }
+        document.write(lessNumbers(5, 3));
+        document.write("<br>");
+
+        //Function Expressions
+        var lessNumbers = function(num1, num2){
+            return num1 - num2;
+        }
+        document.write(lessNumbers(5, 3));
+        document.write("<br>");
+
+
+        // CLASS WORK:
+        // Convert the function below into an arrow function and a function expression:
+        function myName(name){
+            return ("My name is " + name);
+        }
+        document.write(myName("Abraham Tesla"));
+    </script>
+</body>
+</html>

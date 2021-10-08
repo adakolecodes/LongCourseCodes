@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIOS Tutorial 3</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        //FAKE REST API - https://jsonplaceholder.typicode.com/
+        //GET REQUEST
+        axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
+        .then(res => console.log(res.data))
+        .catch(err => console.log(err))
+
+        //POST REQUEST
+        axios.post('https://jsonplaceholder.typicode.com/posts', {title: 'My New Title', body: 'My New Body'})
+        .then(res => console.log(res.data))
+        .catch(err => console.log(err))
+
+        //UPDATE REQUEST
+        axios.patch('https://jsonplaceholder.typicode.com/posts/1', {title: 'My Updated Title', body: 'My Updated Body'})
+        .then(res => console.log(res.data))
+        .catch(err => console.log(err))
+
+        //DELETE REQUEST
+        axios.delete('https://jsonplaceholder.typicode.com/posts/1', {title: 'My Updated Title', body: 'My Updated Body'})
+        .then(res => console.log(res.data))
+        .catch(err => console.log(err))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>AXIOS Tutorial 2</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Axios</h1>
+        <button class="btn btn-primary my-3" id="get">GET</button>
+        <button class="btn btn-info" id="post">POST</button>
+        <button class="btn btn-warning" id="update">PUT/PATCH</button>
+        <button class="btn btn-danger" id="delete">DELETE</button>
+        <button class="btn btn-secondary" id="sim">Sim Requests</button>
+        <button class="btn btn-secondary" id="headers">Custom Headers</button>
+        <button class="btn btn-secondary" id="transform">Transform</button>
+        <button class="btn btn-secondary" id="error">Error Handling</button>
+        <button class="btn btn-secondary" id="cancel">Cancel</button>
+        <hr>
+        <div id="res"></div>
+    </div>
+
+    <script>
+        //FAKE REST API - https://jsonplaceholder.typicode.com/
+        //GET REQUEST
+        function getPosts(){
+            // axios({method: 'get', url: 'https://jsonplaceholder.typicode.com/posts', params: {_limit: 5}}).then(res => showOutput(res)).catch(err => console.error(err))
+            //Easier way of doing axios
+            axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5').then(res => showOutput(res)).catch(err => console.error(err))
+        }
+
+        //POST REQUEST
+        function addPosts(){
+            axios.post('https://jsonplaceholder.typicode.com/posts', {title: 'My new post 2', body: 'How are you 2'}).then(res => showOutput(res)).catch(err => console.error(err))
+        }
+
+        //UPDATE REQUEST - PUT/PATCH
+        function updatePosts(){
+            axios.patch('https://jsonplaceholder.typicode.com/posts/1', {title: 'My updated new post', body: 'How are you is updated'}).then(res => showOutput(res)).catch(err => console.error(err))
+        }
+
+        //DELETE REQUEST
+        function deletePosts(){
+            axios.delete('https://jsonplaceholder.typicode.com/posts/1').then(res => showOutput(res)).catch(err => console.error(err))
+        }
+
+        //SILMUTANEOUS DATA
+        function getData(){
+            axios.all([axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5'), axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')]).then(axios.spread((posts, todos) => showOutput(todos))).catch(err => console.error(err))
+        }
+
+        //Show output in browser
+        function showOutput(res) {
+            document.getElementById('res').innerHTML = `
+            <div class="card card-body mb-4">
+                <h5>Status: ${res.status}</h5>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header">Headers</div>
+                <div class="card-body">
+                    <pre>${JSON.stringify(res.headers, null, 2)}</pre>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header">Data</div>
+                <div class="card-body">
+                    <pre>${JSON.stringify(res.data, null, 2)}</pre>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header">Config</div>
+                <div class="card-body">
+                    <pre>${JSON.stringify(res.config, null, 2)}</pre>
+                </div>
+            </div>
+            `;
+        }
+
+        document.getElementById('get').addEventListener('click', getPosts);
+        document.getElementById('post').addEventListener('click', addPosts);
+        document.getElementById('update').addEventListener('click', updatePosts);
+        document.getElementById('delete').addEventListener('click', deletePosts);
+        document.getElementById('sim').addEventListener('click', getData);
+    </script>
+</body>
+</html>

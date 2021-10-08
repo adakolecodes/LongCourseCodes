@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lessons</title>
+</head>
+<body>
+
+    <!-- WRITING TO HTML DOCUMENT -->
+    <script>
+        // Displaying your name on the webpage using JS code
+        document.write("My Name")
+    </script>
+
+    <!-- Changing the value of an h1 tag using JS -->
+    <h1 id="header"></h1>
+
+    <script>
+        //Referencing the h1 element using the getElementById method (innerHTML refers to what is within the h1 tag)
+        document.getElementById("header").innerHTML = "TECHNOLOGY"
+    </script>
+
+
+    <!-- CONDITIONS AND COMPARISON OPERATORS -->
+    <script>
+        //EQUIVALENCE OPERATOR
+        //Example 1
+        var password = "1234"
+        var confirmpassword = 1234
+        document.write(password === confirmpassword);
+        document.write(password == confirmpassword);
+        //Example 2
+        var email = "david@gmail.com"
+        var confirmemail = "david@gmail.com "
+        document.write(email == confirmemail.trim());
+        document.write(email === confirmemail);
+
+        //"NOT EQUAL TO" OPERATOR (!=)
+        //Example
+        document.write(email != confirmemail);
+
+        //"LOGICAL AND" OPERATOR (&&)
+        //Example 1
+        var idcard = true
+        var facemask = false
+        document.write(idcard && facemask);
+        //Example 2
+        document.write(email === confirmemail && password == confirmpassword);
+        document.write(password == confirmpassword && email == confirmemail.trim());
+
+        //"LOGICAL OR" OPERATOR (||)
+        //Example 1
+        document.write(idcard || facemask);
+
+        //Example 2
+        document.write(password == confirmpassword || password === confirmpassword);
+        document.write(email === confirmemail || password === confirmpassword);
+
+        //LESS THAN AND GREATER THAN (<, >)
+        var cutoff = 180
+        var jambscore = 200
+        document.write(cutoff > jambscore);
+        document.write(cutoff < jambscore);
+
+        //"NOT" OPERATOR
+        var raining = true
+        document.write(!raining);
+    </script>
+
+
+    <!-- FUNCTIONS -->
+    <!-- Refer to function files (functions, calculator, checkadmissionstatus, validation) -->
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY DATA FROM SERVER</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <h3 id="price"></h3>
+    <img id="image" src="" alt="">
+    
+
+    <script>
+        axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
+        .then(res => {
+            console.log(res.data); 
+            document.getElementById("title").innerHTML = res.data[0].productTitle; 
+            document.getElementById("description").innerHTML = res.data[0].productDescription;
+            document.getElementById("price").innerHTML = "Price: N" + res.data[0].productPrice;
+            document.getElementById("image").src = "https://project1-bonsai-jacobtimms.vercel.app/" + res.data[0].productImage;
+        })
+        .then(err => console.log(err))
+        
+    </script>
+</body>
+</html>
