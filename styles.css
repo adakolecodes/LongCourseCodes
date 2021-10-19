@@ -1,0 +1,119 @@
+.menu {
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* h1 {
+    color: red;
+    text-align: center;
+}
+
+.menu {
+    background-color: pink;
+    font-size: 30px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 20px;
+} */
+
+
+
+
+
+
+
+/* #menu {
+    background: rgba(208, 208, 208, 0.50);
+    font-size: 20px;
+    text-align: center;
+} */
+
+
+
+
+/* #menu ul {
+    list-style: none;
+} */
+
+
+
+/* #menu a {
+    color: red;
+    text-decoration: none;
+} */
+
+
+
+
+/* #menu li {
+    display: inline-block;
+    padding: 20px;
+} */
+
+
+
+
+/* #menu a:hover {
+    color: deepskyblue;
+} */
+
+
+
+
+/* #menu li:hover {
+    background: #616161;
+} */
+
+
+
+/* #menu li.active {
+    background: #616161;
+} */
+
+
+
+/* #menu li.active a{
+    color: deepskyblue;
+} */
+
+
+
+/* #menu li.active em{
+    color: gold;
+} */

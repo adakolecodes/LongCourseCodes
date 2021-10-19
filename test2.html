@@ -7,13 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1 id="head"></h1>
+    <input type="number" placeholder="enter value" id="box1" required>
+    <input type="number" placeholder="enter value" id="box2" required>
+    <input type="number" placeholder="Answer" id="answer" required>
+    <button onclick="add()">Add</button>
 
     <script>
-        // var head = "MY WEBSITE"
-        document.getElementById("head").innerHTML = "MY WEBSITE IS VERY VERY GOOD, I LOVE IT";
-        
+        function add(){
+            var num1 = document.getElementById("box1").value
+            var num2 = document.getElementById("box2").value
+            var answer = Number(num1) + Number(num2)
+            document.getElementById("answer").value = answer
+        }
     </script>
 </body>
 </html>
