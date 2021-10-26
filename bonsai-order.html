@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Bonsai Trees</title>
+</head>
+<body>
+    <div class="container mt-5 mb-5">
+        <h1>Place an order now</h1>
+        <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Order Success!</strong> You have successfully ordered for.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div> -->
+    </div>
+
+    <div class="container mb-5">
+        <!-- <form action="https://tbhpwebdevapi.azurewebsites.net/api/Order/simple/save/usingFormData" method="POST"> -->
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="number" name="id" class="form-control" placeholder="id" id="id">
+                </div>
+                <div class="col">
+                    <input type="text" name="clientName" class="form-control" placeholder="Your name" id="clientName">
+                </div>
+                <div class="col">
+                    <input type="number" name="qty" class="form-control" placeholder="Quantity" id="qty">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="text" name="productName" class="form-control" placeholder="Product name" id="productName">
+                </div>
+                <div class="col">
+                    <input type="number" name="productPrice" class="form-control" placeholder="Price" id="productPrice">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-dark" onclick="addTrees()">Order</button>
+                </div>
+            </div>
+        <!-- </form> -->
+    </div>
+
+    <div class="container mb-5" id="showtable">
+        <!-- <div class="row">
+            <div class="col">
+                <img src="" alt="" class="img-fluid rounded" id="image">
+                <h3 id="title">Details of order</h3>
+                <h5 id="price"></h5>
+                <p id="description"></p>
+            </div>
+        </div> -->
+        <h3>Details of order</h3>
+        <table class="table">
+            <tr>
+                <td><strong>Name</strong></td>
+                <td id="clientName"></td>
+            </tr>
+            <tr>
+                <td><strong>Product Name</strong></td>
+                <td id="productName"></td>
+            </tr>
+            <tr>
+                <td><strong>Quantity</strong></td>
+                <td id="qty"></td>
+            </tr>
+            <tr>
+                <td><strong>Price</strong></td>
+                <td id="productPrice"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="bonsai-order.js"></script>
+</body>
+</html>

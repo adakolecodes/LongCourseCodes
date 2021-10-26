@@ -14,6 +14,10 @@
         axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
         .then(res => console.log(res.data))
         .catch(err => console.log(err))
+        //OR
+        // axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
+        // .then(function(res){console.log(res.data)})
+        // .catch(function(err){console.log(err)})
 
         //POST REQUEST
         axios.post('https://jsonplaceholder.typicode.com/posts', {title: 'My New Title', body: 'My New Body'})

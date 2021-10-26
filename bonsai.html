@@ -13,55 +13,32 @@
         <h1>Boinsai Plants</h1>
     </div>
 
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col">
                 <img src="" alt="" class="img-fluid rounded" id="image">
                 <h3 id="title"></h3>
                 <h5 id="price"></h5>
                 <p id="description"></p>
-                <button class="btn btn-dark">Order</button>
+                <a href="bonsai-order.html" class="btn btn-dark">Order</a>
             </div>
             <div class="col">
                 <img src="" alt="" class="img-fluid rounded" id="image2">
                 <h3 id="title2"></h3>
                 <h5 id="price2"></h5>
                 <p id="description2"></p>
-                <button class="btn btn-dark">Order</button>
+                <a href="bonsai-order.html" class="btn btn-dark">Order</a>
             </div>
             <div class="col">
                 <img src="" alt="" class="img-fluid rounded" id="image3">
                 <h3 id="title3"></h3>
                 <h5 id="price3"></h5>
                 <p id="description3"></p>
-                <button class="btn btn-dark">Order</button>
+                <a href="bonsai-order.html" class="btn btn-dark">Order</a>
             </div>
         </div>
     </div>
 
-    <script>
-        axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
-        //First Plant
-        .then(res => {
-            console.log(res.data); 
-            document.getElementById("title").innerHTML = res.data[0].productTitle; 
-            document.getElementById("price").innerHTML = "Price: N" + res.data[0].productPrice;
-            document.getElementById("description").innerHTML = res.data[0].productDescription;
-            document.getElementById("image").src = "https://project1-bonsai-jacobtimms.vercel.app/" + res.data[0].productImage;
-
-
-            document.getElementById("title2").innerHTML = res.data[1].productTitle; 
-            document.getElementById("price2").innerHTML = "Price: N" + res.data[1].productPrice;
-            document.getElementById("description2").innerHTML = res.data[1].productDescription;
-            document.getElementById("image2").src = "https://project1-bonsai-jacobtimms.vercel.app/" + res.data[1].productImage;
-
-
-            document.getElementById("title3").innerHTML = res.data[2].productTitle; 
-            document.getElementById("price3").innerHTML = "Price: N" + res.data[2].productPrice;
-            document.getElementById("description3").innerHTML = res.data[2].productDescription;
-            document.getElementById("image3").src = "https://project1-bonsai-jacobtimms.vercel.app/" + res.data[2].productImage;
-        })
-        .then(err => console.log(err))
-    </script>
+    <script src="bonsai.js"></script>
 </body>
 </html>

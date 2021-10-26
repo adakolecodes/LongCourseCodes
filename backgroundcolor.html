@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body id="bodycolor">
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('yellow')">Yellow</button>
+
+    <input type="text" id="getcolor">
+    <button onclick="changeColor2()">Enter</button>
+
+    <!-- We can use parameters to have only one function for same purpose or we can use an input -->
+    <script>
+        //Using parameters
+        function changeColor(color){
+            document.getElementById("bodycolor").style.backgroundColor = color;
+        }
+
+        //Using input
+        function changeColor2(){
+            var getcolor = document.getElementById("getcolor").value
+            document.getElementById("bodycolor").style.backgroundColor = getcolor
+        }
+    </script>
+</body>
+</html>
