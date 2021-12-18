@@ -21,6 +21,12 @@
 //         })
 // .then(err => console.log(err))
 
+
+
+
+
+
+
 async function getTrees(){
     try {
         let trees = await axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
