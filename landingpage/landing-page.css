@@ -1,0 +1,58 @@
+.header{
+    background-image: url("images/img1.jpg");
+    background-color: rgb(46, 46, 46);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.headHeading1{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+.headHeading5{
+    text-align: center;
+}
+nav{
+    display: flex;
+    /* padding: 25px; */
+}
+/* .branding{
+    display: flex;
+    align-items: center;
+} */
+.nav-links{
+    /* position: relative; */
+    display: flex;
+    flex: 1;
+    /* align-items: center; */
+    justify-content: flex-end;
+}
+.nav-links li{
+    display: inline-block;
+    padding-left: 20px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: #ffc107;
+}
+.achievement{
+    background-color: #212529;
+    text-align: center;
+}
+.achievement h1{
+    color: #ffc107;
+    font-weight: 900;
+}
+.achievement h6{
+    color: white;
+}
+.footer{
+    background-color: #212529;
+    text-align: center;
+    color: white;
+}
