@@ -1,5 +1,5 @@
 .header{
-    background-image: url("images/img1.jpg");
+    background-image: url("../images/img1.jpg");
     background-color: rgb(46, 46, 46);
 
     background-repeat: no-repeat;
@@ -41,8 +41,13 @@ nav{
     color: #ffc107;
 }
 .achievement{
+    background-image: url("../images/img1.jpg");
     background-color: #212529;
     text-align: center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .achievement h1{
     color: #ffc107;
