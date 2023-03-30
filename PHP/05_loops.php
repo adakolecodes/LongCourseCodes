@@ -66,21 +66,21 @@ foreach ($numbers as $x) {
 
 // Use the indexes within the loop
 
-$posts = ['Post One', 'Post Two', 'Post Three'];
+// $posts = ['Post One', 'Post Two', 'Post Three'];
 
-foreach ($posts as $index => $post) {
-  echo "${index} - ${post} <br>";
-}
+// foreach ($posts as $index => $post) {
+//   echo "${index} - ${post} <br>";
+// }
 
 // Use the keys within the loop for an associative array
 
-$person = [
-  'first_name' => 'Brad',
-  'last_name' => 'Traversy',
-  'email' => 'brad@gmail.com',
-];
+// $person = [
+//   'first_name' => 'Brad',
+//   'last_name' => 'Traversy',
+//   'email' => 'brad@gmail.com',
+// ];
 
 // Get Keys
-foreach ($person as $key => $val) {
-  echo "${key} - ${val} <br>";
-}
+// foreach ($person as $key => $val) {
+//   echo "${key} - ${val} <br>";
+// }
