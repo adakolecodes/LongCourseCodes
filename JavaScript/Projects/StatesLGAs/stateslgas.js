@@ -7,7 +7,7 @@ function getLGAsByState(state) {
         // Add more countries and states as needed
     };
   
-    // Check if the country exists in the state data
+    // Check if the state exists in the lga data
     if (state in lgaData) {
         return lgaData[state];
     } else {
