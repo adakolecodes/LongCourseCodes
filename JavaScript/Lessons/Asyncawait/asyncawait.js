@@ -32,16 +32,16 @@ const apiUrl = "https://api.quotable.io/random";
 
 
 //USING AXIOS WITHOUT ASYNC AWAIT
-// function getQuote(){
-//     axios.get(apiUrl)
-//     .then(response => {
-//         quoteContentEl.innerHTML = response.data.content
-//         quoteAuthorEl.innerHTML = response.data.author
-//     })
-//     .catch(error => {
-//         console.log(error);
-//     })
-// }
+function getQuote(){
+    axios.get(apiUrl)
+    .then(response => {
+        quoteContentEl.innerHTML = response.data.content
+        quoteAuthorEl.innerHTML = response.data.author
+    })
+    .catch(error => {
+        console.log(error);
+    })
+}
 
 
 //USING AXIOS WITH ASYNC AWAIT

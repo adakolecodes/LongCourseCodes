@@ -17,20 +17,28 @@
 
 document.getElementById("showtable").style.visibility = "hidden";
 function addTrees(){
+    //Get html inputs
+    var id = document.getElementById("id").value;
+    var nameOfClient = document.getElementById("clientName").value;
+    var nameOfProduct = document.getElementById("productName").value;
+    var quantity = document.getElementById("qty").value;
+    var price = document.getElementById("productPrice").value;
+
     axios.post('https://tbhpwebdevapi.azurewebsites.net/api/Order/simple/save/usingJson', {
-        id: 1, 
-        clientName: 'My plant', 
-        qty: 2, 
-        productName: 'Its fine', 
-        productPrice: 200
+        id: Number(id), 
+        clientName: nameOfClient, 
+        qty: Number(quantity), 
+        productName: nameOfProduct, 
+        productPrice: Number(price)
     })
     .then(res => {
         document.getElementById("showtable").style.visibility = "visible";
         console.log(res.data)
-        document.getElementById("clientName").innerHTML = res.data[1].clientName; 
-        document.getElementById("productName").innerHTML = res.data[1].productName;
-        document.getElementById("qty").innerHTML = res.data[1].qty;
-        document.getElementById("productPrice").innerHTML = res.data[1].productPrice;
+        document.getElementById("name_client").innerHTML = res.data.clientName; 
+        document.getElementById("name_product").innerHTML = res.data.productName;
+        document.getElementById("quantity").innerHTML = res.data.qty;
+        document.getElementById("price_product").innerHTML = res.data.productPrice;
+        // document.getElementById("productPrice").innerHTML = res.data[1].productPrice;
     })
     .catch(err => console.log(err))
 }
