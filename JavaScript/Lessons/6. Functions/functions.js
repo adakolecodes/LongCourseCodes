@@ -17,10 +17,12 @@ Rules of a function
 1. Any function you have to change the contents inside before you can reuse is a bad function. 
 2. Parameters and Arguments
 - A parameter represents the value an argument 
-- A parameter is used when defining the function 
-- An argument is used when declaring the function
-3. You don't declare your function before you define it. You define before declaring
+- A parameter is used when declaring the function 
+- An argument is used when calling the function
+3. You don't call your function before you declare it. You declare before calling
 4. Whenever a parameter is used, an argument is expected 
+5. The number of arguments must match the number of parameters and vice versa
+6. The position of the arguments must match the position of the parameters and vice versa
 
 Things to note about a function 
 1. A static function returns the same value, a dynamic function returns a dynamic value based on the argument parsed 
