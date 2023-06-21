@@ -8,37 +8,55 @@
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
 </head>
 <body>
-    <div class="container mb-5">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="DBA" width="30" height="30">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Campuses</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Nursery</a></li>
-                                <li><a class="dropdown-item" href="#">Primary</a></li>
-                                <li><a class="dropdown-item" href="#">Secondary</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apply</a></li>
-                    </ul>
-                </div>
+    <!-- NAVBAR SECTION -->
+    <!-- Navbar code can also be extracted from here https://getbootstrap.com/docs/5.3/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="DBA" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Campuses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Nursery</a></li>
+                            <li><a class="dropdown-item" href="#">Primary</a></li>
+                            <li><a class="dropdown-item" href="#">Secondary</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apply</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    
+    <!-- HEADER SECTION -->
+    <div class="container mb-5 mt-5">
+        <h1><strong>Dream Builders Academy</strong></h1>
+        <h5>Inspiring Minds, Building Futures</h5>
+        <p>Welcome to Dream Builders Academy, where we believe in the power of dreams and the potential within each student to build a future of success and fulfillment.</p>
+        <img src="assets/images/school-building-hero.jpg" alt="image" class="img-fluid rounded-3 shadow-sm">
+    </div>
 
-        <div class="mt-5">
-            <h1><strong>Dream Builders Academy</strong></h1>
-            <h5>Inspiring Minds, Building Futures</h5>
-            <p>Welcome to Dream Builders Academy, where we believe in the power of dreams and the potential within each student to build a future of success and fulfillment.</p>
+    <!-- ABOUT US SECTION -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>About Us</h2>
+                <p>Welcome to Dream Builders Academy, where we believe in the power of dreams and the potential within each student to build a future of success and fulfillment.</p>
+                <p>At Dream Builders Academy, we strive to create an educational environment that inspires, motivates, and empowers our students to dream big and reach their highest potential. We understand that each student is unique, with their own set of dreams, talents, and aspirations. Our dedicated team of educators is committed to nurturing and guiding students on their individual journeys towards achieving their dreams.</p>
+                <p>Our academy provides a comprehensive and holistic approach to education, encompassing academic excellence, personal development, and character building. We offer a diverse range of programs and a rich curriculum that is designed to foster critical thinking, creativity, collaboration, and leadership skills. Through a combination of engaging classroom experiences, hands-on learning opportunities, and extracurricular activities, we aim to ignite a passion for lifelong learning in our students.</p>
+                <a href="about.html" class="btn btn-dark btn-sm shadow-sm">Learn More ></a>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+            </div>
         </div>
     </div>
     
