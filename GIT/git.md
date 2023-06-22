@@ -12,11 +12,11 @@ Git can either be done via the Git Bash (Command Prompt) or VS Code.
 3. Install GitBash software on your computer - search on google for 'Git Bash Download'
 4. Right click on the project folder to be linked with the repo and select “GitBash Here”, a command prompt window will open
 5. Configure your username and email by running the following command
-- git config –-global user.name “enter your github username”
+- git config --global user.name “enter your github username”
 - Git config --global user.email “enter the email address used for github”
 6. Now lets proceed to link our project with our repository by running the following command step by step
 - git init
-- git add –A
+- git add -A
 - git commit -m “Add a comment of your commit“
 - git remote add origin pasteLinkOfRepository
 - git push origin master
