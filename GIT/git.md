@@ -7,7 +7,7 @@ Git can either be done via the Git Bash (Command Prompt) or VS Code.
 
 # Steps in linking a project with GitHub repository
 
-1. Create an account or login to your GitHub account
+1. Create an account or login to your GitHub account via www.github.com
 2. Create a GitHub repository with the name of the project
 3. Install GitBash software on your computer
 4. Right click on the project folder to be linked with the repo and select “GitBash Here”, a command prompt window will open
