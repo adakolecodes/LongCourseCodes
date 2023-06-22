@@ -22,12 +22,14 @@ Git can either be done via the Git Bash (Command Prompt) or VS Code.
 - git push origin master
 
 At this point, if you are using GitBash for the first time on your pc you will be required to sign in using your personal access token
+
 7. Generate your personal access token by going into the settings of your GitHub account, then select Developer settings, then select Personal access tokens and click Generate new token
 8. Enter a Note or description for the token being generated – you can just simply type Repo access
 9. Select scopes by ticking the checkbox of “Repo” then scroll down and click Generate token
 10. Copy the access token and paste it somewhere for future use, and head back and paste the access token in the GitHub Sign up window
 
 At this point your project would be pushed to the github repository you created
+
 11. When changes are made to your project you can update your github repository with those changes via gitbash by following the steps outlined below
 
 
@@ -53,7 +55,9 @@ Eg:
 git clone https://github.com/githubusername/repo.git
 
 Where:
+
 githubusername is the username of the github account
+
 repo.git is the repository to be clonned
 
 NB: In cloning, you first enter the folder on your pc you want to clone the repository into and right click and select "GitBash Here“ (Note that the option for “GitBash Here” will only appear if you have installed Git on your system)
