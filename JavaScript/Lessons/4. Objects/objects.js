@@ -48,5 +48,13 @@ This nested object structure allows you to represent more complex data, such as 
 You can access the properties of the nested object using dot notation or bracket notation, just like before:
 */
 
-console.log(person.address.street); // Outputs: 123 Main St
-console.log(person.address['city']); // Outputs: Exampleville
+console.log(person2.address.street); // Outputs: 123 Main St
+console.log(person2.address['city']); // Outputs: Exampleville
+
+
+//How to check if a property exists in an object
+if("age" in person2){
+    console.log("Yes it exists")
+}else{
+    console.log("No it does not exist")
+}
