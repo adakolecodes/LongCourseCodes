@@ -54,6 +54,8 @@ console.log(person2.address['city']); // Outputs: Exampleville
 
 
 //How to check if a property exists in an object
+person2.hasOwnProperty("age") //This returns true, because age property exists in the person2 object. To see the output we console log person2.hasOwnProperty("age")
+//OR
 if("age" in person2){
     console.log("Yes it exists")
 }else{
