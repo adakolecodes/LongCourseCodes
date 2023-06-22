@@ -9,7 +9,7 @@ Git can either be done via the Git Bash (Command Prompt) or VS Code.
 
 1. Create an account or login to your GitHub account via www.github.com
 2. Create a GitHub repository with the name of the project
-3. Install GitBash software on your computer
+3. Install GitBash software on your computer - search on google for 'Git Bash Download'
 4. Right click on the project folder to be linked with the repo and select “GitBash Here”, a command prompt window will open
 5. Configure your username and email by running the following command
 - git config –-global user.name “enter your github username”
