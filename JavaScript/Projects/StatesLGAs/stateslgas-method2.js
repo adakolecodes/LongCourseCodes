@@ -45,7 +45,7 @@ function getLGAsByState(state) {
         //Create a p tag dynamically using JS
         const message = document.createElement("p");
         //Set the content for the p tag/element created (note: innterHTML or textContent can be used to set a content of an element/tag)
-        message.textContent = "No LGA found for the selected country.";
+        message.textContent = "No LGA found for the selected state.";
         //Append the p tag/element to the lga container div tag/element
         lgaContainer.appendChild(message);
     }else {
