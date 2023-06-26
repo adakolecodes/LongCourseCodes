@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Bootstrap/bootstrap.css">
+</head>
+<body style="background-color: rgb(248, 248, 234);">
+
+    <div class="container mt-5 mb-5">
+        <h1>Check LGA</h1>
+
+        <select name="state-select" class="form-control" id="state-select">
+            <option selected disabled value="">Select a state...</option>
+            <option value="Benue">Benue</option>
+            <option value="Taraba">Taraba</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Kogi">Kogi</option>
+        </select>
+
+        <div id="lga-container" class="mt-5"></div>
+
+    </div>
+
+    <script>
+        // Get the state select element
+        const stateSelect = document.getElementById("state-select");
+    
+        // Add an event listener to update the displayed LGAs when the selection changes
+        stateSelect.addEventListener("change", function() {
+            //Get the value of the state selected and store it in selectedState variable
+            const selectedState = stateSelect.value;
+            //Call the function getLGAsByState with the selected state as an arguement
+            getLGAsByState(selectedState);
+        });
+    </script>
+
+    <script src="stateslgas-method3.js"></script>
+</body>
+</html>
