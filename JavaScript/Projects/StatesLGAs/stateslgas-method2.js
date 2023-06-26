@@ -38,7 +38,7 @@ function getLGAsByState(state) {
     // Clear the ul content when another state is selected
     list.innerHTML = "";
 
-    //Check if the lga exists
+    //Check if the lga exists. We can also use 'if(lgas == "")'
     if (lgas.length === 0) {
         //If no LGA exist for the selected state then display message to indicate (note: both innterHTML or textContent can be used to set a content of an element/tag)
         message.innerHTML = "No LGA found for the selected state.";
