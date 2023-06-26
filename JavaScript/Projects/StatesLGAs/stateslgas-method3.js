@@ -8,7 +8,7 @@ function getLGAsByState(state) {
         // Add more states and LGAs as needed
     };
 
-    //Get the lga data for the specific state parsed as an arguement and store in the lgas variable
+    //Get the lga data for the selected state and store in the lgas variable
     const lgas = lgaData[state] || [];
   
     //Get the lga-container div tag/element

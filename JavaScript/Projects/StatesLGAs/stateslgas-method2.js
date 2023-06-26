@@ -25,12 +25,12 @@ function getLGAsByState(state) {
         // Add more states and LGAs as needed
     };
 
-    //Get the lga data for the specific state parsed as an arguement and store in the lgas variable
+    //Get the lga data for the selected state and store in the lgas variable
     const lgas = lgaData[state] || [];
-  
+
     //Get the p tag by it's id for displaying message
     const message = document.getElementById("message");
-    // Clear the p tag content when another state is selected
+    //Clear the p tag content when another state is selected
     message.innerHTML = "";
 
     //Get the ul tag by it's id for displaying lists of LGAs
@@ -40,10 +40,9 @@ function getLGAsByState(state) {
 
     //Check if the lga exists
     if (lgas.length === 0) {
-        //If no state exists for the arguement parsed then display message (note: both innterHTML or textContent can be used to set a content of an element/tag)
+        //If no LGA exist for the selected state then display message to indicate (note: both innterHTML or textContent can be used to set a content of an element/tag)
         message.innerHTML = "No LGA found for the selected state.";
     }else {
-        document.getElementById("display").innerHTML = lgas;
         //Loop through lgas and create an li tag/element for each
         for (const lga of lgas) {
             //Create a li tag/element dynamically using JS to display each LGAs.
