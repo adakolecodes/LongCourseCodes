@@ -31,7 +31,7 @@ person.greet(); // Outputs: Hello, my name is John Doe
 const person2 = {
     name: "John Doe",
     age: 30,
-    address: { //An object within an object
+    address: { //A property of an object
         street: "123 Main St",
         city: "Exampleville",
         country: "Exampleland"
