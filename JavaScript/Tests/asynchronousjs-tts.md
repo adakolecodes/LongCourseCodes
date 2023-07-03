@@ -26,6 +26,8 @@ axios.get('https://tbhpwebdevapi.azurewebsites.net/api/Bonsai')
 
 7. Convert the code in question 6 to make use of async await simplified way of returning a promise
 
+8. What does HTTP stand for and what is it?
+
 9. What is HTTPS and what differentiates it from HTTP?
 
 10. Mention 4 HTTP methods we have and briefly distinguish them
