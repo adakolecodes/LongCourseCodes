@@ -25,7 +25,7 @@ Your vue project should now be started on a local host, press ctrl and click on 
 
 Locate the folder where vue project was created (Typically this should be in the users directory)
 
-(If you want to resume work on your project after you’ve terminated the localhost connection, open your project in vs code, click on terminal and then new terminal at the top bar and type npm run serve to start the connection on the localhost port)
+(If you want to resume work on your project after you’ve terminated the localhost connection, open your project in vs code, click on terminal and then new terminal at the top bar and type `npm run serve` to start the connection on the localhost port)
 
 It is recommended to also have the Vetur extension installed in your vs code editor. Install the extension from the extensions tab.
 
