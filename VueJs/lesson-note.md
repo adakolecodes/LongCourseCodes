@@ -53,8 +53,10 @@ It is recommended to also have the Vetur extension installed in your vs code edi
 
 **src folder:**
 - main.js: this is the entry point to vue. We import createApp method from vue and also we import our root app component which is in App.vue
+
 We call createApp method and pass the main app component and mount It to the div with the id of app
-- App.vue: this is like our root component, every component we create will be embedded here.
+
+- App.vue: this is like our root component, every component we create will be embedded/imported here.
 
 
 # Parts of a component
