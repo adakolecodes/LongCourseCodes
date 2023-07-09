@@ -71,3 +71,9 @@ When we create a component, we import it into our App.vue within the script tag,
 Some components have props which are defined within them and parsed in the component within the template tag of App.vue
 
 
+# Extra - Installing Bootstrap to vue js
+
+1. Open your terminal, navigate to your project directory and run `npm install bootstrap@5.3.0` to install Bootstrap version 5.3.0
+2. After installation is completed, open your project in vs code and import bootstrap into your main.js file to make it accessible globally by typing `import 'bootstrap/dist/css/bootstrap.css'`
+
+If you are going to make use of components like nav bar that requires the js component, then import bootstrap js by typing `import 'bootstrap/dist/js/bootstrap.min.js'`
