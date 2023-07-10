@@ -37,13 +37,22 @@ Your vue project should now be started on a local host, press ctrl and click on 
 12. Run the project on a local host by running: `npm run serve`
 
 
+# Installing Vue Router on already existing vue project that does not have vue router
+1. Open your command prompt (ensure you have nagivated to your project directory) and then run `vue add router`
+2. When asked to Use history mode for router?, type `Y` for yes and enter, router should be successfully installed on your existing project
+3. To confirm router has been successfully installed, check your src folder of your project you will see two new folders - router and views
+
+
 # Open created project in vs code
 
-Locate the folder where vue project was created (Typically this should be in the users directory)
-
-(If you want to resume work on your project after you’ve terminated the localhost connection, open your project in vs code, click on terminal and then new terminal at the top bar and type `npm run serve` to start the connection on the localhost port)
+Locate the folder where vue project was created (Typically this should be in the users directory in the local disk if no location was manually specified)
 
 It is recommended to also have the Vetur extension installed in your vs code editor. Install the extension from the extensions tab.
+
+
+# Resume work on project
+
+(If you want to resume work on your project after you’ve terminated the localhost connection, open your project in vs code, click on terminal and then new terminal at the top bar and type `npm run serve` to start the connection on the localhost port). Alternatively you can also start the connection through the command prompt, however ensure you have navigated into the project directory before running the command
 
 
 # Vue folder structure
