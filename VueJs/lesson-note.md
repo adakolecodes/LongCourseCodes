@@ -7,7 +7,6 @@ Vue is a frontend JavaScript framework for building websites, webapps and user i
 There are two major ways we can build a project using vue. First is by building the project using vue CDN (majorly for prototyping and learning purpose) and secondly by building the project using vue CLI (for development purpose)
 
 # Setting up vue js on windows & creating project (Without vue router)
-
 1. Ensure Node.js is installed on PC. Download from https://nodejs.org/en/ 
 2. Install vue js globally on your pc by running: `npm install -g @vue/cli` on your command prompt
 3. Create project by running: `vue create nameofproject` in command prompt
@@ -83,8 +82,11 @@ Some components have props which are defined within them and parsed in the compo
 
 
 # Extra - Installing Bootstrap to vue js
-
 1. Open your terminal, navigate to your project directory and run `npm install bootstrap@5.3.0` to install Bootstrap version 5.3.0
 2. After installation is completed, open your project in vs code and import bootstrap into your main.js file to make it accessible globally by typing `import 'bootstrap/dist/css/bootstrap.css'`
 
 If you are going to make use of components like nav bar that requires the js component, then import bootstrap js by typing `import 'bootstrap/dist/js/bootstrap.min.js'`
+
+
+# Making API calls to server on vue js (Using Axios)
+1. Open your terminal, navigate to your project directory and run `npm install axios` to install axios
