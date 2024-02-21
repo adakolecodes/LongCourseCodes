@@ -12,9 +12,9 @@ There are different types of loops in JavaScript, but the most commonly used one
 //1. For Loop:
 //A for loop is used to repeat a block of code for a specific number of times. 
 //It has three parts: initialization, condition, and increment/decrement.
-for (initialization; condition; increment/decrement) {
-    // Code to be executed in each iteration
-}
+// for (initialization; condition; increment/decrement) {
+//     // Code to be executed in each iteration
+// }
 //Example: Printing numbers from 1 to 5 using a for loop.
 for (let i = 1; i <= 5; i++) {
     console.log(i);
@@ -30,6 +30,19 @@ for(let i = 2; i <= 10; i+=2){//this iterates from 2 to 10 with a step of 2
 for(let i = 3; i <= 12; i+=3){//this iterates from 3 to 12 with a step of 3
     console.log(i);
 }
+//Example: FizzBuzz
+for(let x = 2; x <= 20; x++){
+    if(x % 2 == 0 && x % 3 == 0){
+        console.log(x + "FizzBuzz")
+    }if(x % 2 == 0){
+        console.log(x + "Fizz")
+    }else if(x % 3 == 0){
+        console.log(x + "Buzz")
+    }else{
+        console.log(x)
+    }
+}
+
 
 
 
