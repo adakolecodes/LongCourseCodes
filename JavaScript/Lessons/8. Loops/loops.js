@@ -22,6 +22,14 @@ for (let i = 1; i <= 5; i++) {
 //In this example, the loop initializes i with 1, continues as long as i is less than or equal to 5, and increments i by 1 in each iteration. 
 //The loop prints the numbers 1, 2, 3, 4, and 5.
 
+//Example: Printing out even numbers using for loop
+for(let i = 2; i <= 10; i+=2){//this iterates from 2 to 10 with a step of 2
+    console.log(i);
+}
+//Example: Printing out odd numbers using for loop
+for(let i = 3; i <= 12; i+=3){//this iterates from 3 to 12 with a step of 3
+    console.log(i);
+}
 
 
 
