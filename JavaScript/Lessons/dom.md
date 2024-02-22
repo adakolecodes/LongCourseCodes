@@ -13,3 +13,7 @@ Note: Each course of action is seperated with a dot
 Assuming we have a h1 tag and we want to set the inner content to read "Hello World" using JS:
 
 `<h1 id="head"></h1>`
+
+<div>
+    <h1>Hello World</h1>
+</div>
