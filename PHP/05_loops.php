@@ -64,6 +64,48 @@ foreach ($numbers as $number) {
   echo "Number: $number <br>";
 }
 
+//Loop through an associative array
+
+$books = [
+    [
+        "title" => "The Catcher in the Rye",
+        "author" => "J.D. Salinger",
+        "release_year" => 1951,
+        "purchase_url" => "https://example.com/catcher-in-the-rye"
+    ],
+    [
+        "title" => "Pride and Prejudice",
+        "author" => "Jane Austen",
+        "release_year" => 1813,
+        "purchase_url" => "https://example.com/pride-and-prejudice"
+    ],
+    [
+        "title" => "The Hobbit",
+        "author" => "J.R.R. Tolkien",
+        "release_year" => 1937,
+        "purchase_url" => "https://example.com/the-hobbit"
+    ],
+    [
+        "title" => "The Lord of the Rings",
+        "author" => "J.R.R. Tolkien",
+        "release_year" => 1954,
+        "purchase_url" => "https://example.com/the-lord-of-the-rings"
+    ],
+    [
+        "title" => "Harry Potter and the Philosopher's Stone",
+        "author" => "J.K. Rowling",
+        "release_year" => 1997,
+        "purchase_url" => "https://example.com/harry-potter"
+    ]
+];
+
+foreach ($books as $book): ?>
+  <ul>
+    <li>Title: <?php echo $book['title']; ?></li>
+  </ul>
+<?php endforeach; ?>
+
+
 // Use the indexes within the loop
 
 // $posts = ['Post One', 'Post Two', 'Post Three'];
