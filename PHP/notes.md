@@ -4,7 +4,7 @@ Setting up a local server environment on your Windows PC using PHP without relyi
 
 1. Install PHP (if not yet installed)
 2. Configure PHP (if not yet configured)
-3. Start a Local Server: Navigating to the directory where your PHP files are located and run the following command (run the command using either command prompt or using vs code terminal)
+3. Start a Local Server: Navigate to the directory where your PHP files are located and run the following command (run the command using either command prompt or using vs code terminal)
 ```cmd
 php -S localhost:8000
 ```
