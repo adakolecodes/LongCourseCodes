@@ -35,11 +35,13 @@ var_dump($cashOnHand);
 // Double quotes can be used to add variables to strings
 echo "$name is $age years old";
 
-// Better to do this
-echo "${name} is ${age} years old";
+// Another way to do it
+echo "{$name} is {$age} years old";
 
-// Concatenate Strings
+// Concatenate Strings (in php, concatenation is done using a period (.))
+echo $name . ' is ' . $age . ' years old';
 
+//Concatenating html tags with php variables
 echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
 
 // Arithmetic Operators
