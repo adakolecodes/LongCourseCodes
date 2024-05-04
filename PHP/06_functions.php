@@ -45,13 +45,13 @@ function subtract($num1 = 10, $num2 = 5)
 echo subtract();
 
 // Assigning anonymous functions to variables. Often used for closures and callback functions
-$add = function ($num1, $num2) {
-  return $num1 + $num2;
-};
+// $add = function ($num1, $num2) {
+//   return $num1 + $num2;
+// };
 
-echo $add(5, 5);
+// echo $add(5, 5);
 
-// Arrow functions
-$multiply = fn($num1, $num2) => $num1 * $num2;
+// // Arrow functions
+// $multiply = fn($num1, $num2) => $num1 * $num2;
 
-echo $multiply(5, 5);
+// echo $multiply(5, 5);
