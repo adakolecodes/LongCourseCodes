@@ -24,12 +24,12 @@ for ($x = 0; $x <= 10; $x++) {
   }
 */
 
-$x = 1;
+// $x = 1;
 
-while ($x <= 5) {
-  echo "Number: $x <br>";
-  $x++;
-}
+// while ($x <= 5) {
+//   echo "Number: $x <br>";
+//   $x++;
+// }
 
 /* ---------- Do While Loop --------- */
 
@@ -42,10 +42,10 @@ while ($x <= 5) {
 do...while loop will always execute the block of code once, even if the condition is false.
 */
 
-do {
-  echo "Number: $x <br>";
-  $x++;
-} while ($x <= 5);
+// do {
+//   echo "Number: $x <br>";
+//   $x++;
+// } while ($x <= 5);
 
 /* ---------- Foreach Loop ---------- */
 
@@ -60,8 +60,8 @@ do {
 
 $numbers = [1, 2, 3, 4, 5];
 
-foreach ($numbers as $x) {
-  echo "Number: $x <br>";
+foreach ($numbers as $number) {
+  echo "Number: $number <br>";
 }
 
 // Use the indexes within the loop
