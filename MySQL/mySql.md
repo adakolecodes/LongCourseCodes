@@ -70,8 +70,8 @@ Note that in your database you can create multiple tables to store different inf
 Step 1: Select the database, enter table name, select number of columns (in our case 8), click enter
 ![alt text](image-3.png)
 
-Step 2: Watch video below for guide on step 2
-<video controls src="Creating a MySQL Table via PhpMyAdmin.mp4" title="Title"></video>
+Step 2: Watch video via link below for guide on step 2
+https://drive.google.com/file/d/1aIJoXr_FFkG2WndyGwaw9wJ4u1IH7aLZ/view?usp=sharing
 
 ## Inserting employee data
 Click your SQL tab and paste the SQL statement below in the text area input.
