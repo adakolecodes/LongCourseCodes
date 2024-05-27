@@ -55,10 +55,10 @@ For the scope of this course, to work with MySQL database we need to have phpMyA
 
 ## Creating a database
 
-Step 1:
-![alt text](cat-computer2.jpg)
+Step 1: Click on 'New' at the left hand pane
+![alt text](image-1.png)
 
-Step 2: Enter a name for your database
+Step 2: Enter a name for your database and click Create
 ![alt text](image-2.png)
 
 ## Creating a table in your database
