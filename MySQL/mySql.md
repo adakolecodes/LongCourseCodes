@@ -56,7 +56,7 @@ For the scope of this course, to work with MySQL database we need to have phpMyA
 ## Creating a database
 
 Step 1:
-![alt text](image-1.png)
+![alt text](https://drive.google.com/file/d/1yrph4wneKTuOHmIDbh6TKwiP4xKXkZ52/view?usp=sharing)
 
 Step 2: Enter a name for your database
 ![alt text](image-2.png)
