@@ -258,3 +258,9 @@ NB: Notice we did not specify an id column and it's value, because our id column
 ```SQL
 UPDATE employees SET age = 30 WHERE id = 20;
 ```
+
+### Delete the record of the employee with an id of 20
+
+```SQL
+DELETE FROM employees WHERE id = 20;
+```
