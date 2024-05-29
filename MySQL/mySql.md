@@ -248,7 +248,13 @@ SELECT * FROM employees WHERE occupation NOT IN ('Teacher', 'Nurse');
 ### Insert a new employee into our employees table
 
 ```SQL
-INSERT INTO employees (firstName, lastName, gender, age, occupation, income, married) VALUES ('Mark', 'Douglas', 'Male', 39, 'Clergy', 700, true)
+INSERT INTO employees (firstName, lastName, gender, age, occupation, income, married) VALUES ('Mark', 'Douglas', 'Male', 39, 'Clergy', 700, true);
 ```
 
 NB: Notice we did not specify an id column and it's value, because our id column is set as auto increament and has a primary key, so not specifying it will automatically insert an id value for us whenever we perform an insert
+
+### Update the age of the employee with an id of 20, set his age to 30
+
+```SQL
+UPDATE employees SET age = 30 WHERE id = 20;
+```
