@@ -40,9 +40,11 @@ The different routes in our app can be defined in the `index.js` file which is l
 
 # Files
 ## App.vue
-App.vue is the main entry point of your **Vue js application** where your app's components, logic, and layout come together. It's like the front door of your app, where everything starts. Every component we create will be embedded here.
+App.vue is the main entry point of your **Vue js application** where your app's components, logic, and layout come together. It's like the front door of your app, where everything starts.
 
 Think of App.vue as the container that holds all the other components, pages, and views together.
+
+Any component or code we put in the `App.vue` becomes a global component/code, meaning we would see that component or code appear in all other views. A good use case for this would be the NavBar.
 
 ## Main.js
 Main.js is like the ignition switch of your Vue js app. It's the file that starts everything up!
@@ -75,3 +77,19 @@ Here's what's happening in the index.html file:
 - `main.js` is executed, which initializes the Vue application.
 3. **Vue mounts `App.vue` to #app**:
 - The content of `App.vue` is rendered inside the #app element in `index.html`.
+
+# State Management
+State management is all about how you handle data (state) in your application and how this data is shared between different components. In Vue.js 3, state management can be done in several ways, but the most common and powerful tool for this is **Vuex**.
+
+## What is State?
+State is the data or information that your application needs to function. For example, user information, list of items etc.
+
+## Why Do We Need State Management?
+As your application grows, managing state (data) can become complex, especially when multiple components need to share and update the same state. State management helps to:
+
+- Keep State Centralized: Instead of having state scattered across many components, you keep it in one place.
+- Make State Predictable: Changes to the state follow a clear, structured process, making your app easier to understand and debug.
+- Share State Easily: Different components can access and update the state without complex event handling or prop drilling.
+
+# State Management with Vuex
+Vuex is a state management library for Vue.js applications. It provides a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.

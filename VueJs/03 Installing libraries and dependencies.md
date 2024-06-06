@@ -12,7 +12,7 @@
 
 `import store from './store/index.js'`
 
-Mount it:
+Use it:
 
 `app.use(store)`
 
