@@ -66,7 +66,7 @@ Directives in Vue.js are special tokens that you can use to change the behavior 
 **`v-bind`** is a directive in Vue that helps you bind data to HTML attributes. It allows you to dynamically set attributes on HTML elements such as class, style, src, href, etc. and pass dynamic data to them.
 
 Example:
-```vue js
+```html
 <img v-bind:src="'assets/images/' + image_name" />
 ```
 
@@ -84,7 +84,118 @@ So, the code is essentially saying: "Hey, display an image from this specific fi
 Note: `v-bind` directive in vue js is usually shortened to `:`, so `v-bind:src` becomes `:src`
 
 ### v-if and v-else directives
-...
+`v-if` and `v-else` are directives in Vue that help you control what content to display based on conditions.
+
+**`v-if`**:
+Think of `v-if` like a gatekeeper. It only allows content to pass through if a certain condition is true.
+
+Example:
+
+```html
+<div v-if="isAuthenticated">Welcome, user!</div>
+```
+Here, the div will only be visible if the isAuthenticated variable is true.
+
+**`v-else`**:
+`v-else` is like a backup plan. It displays content when the condition in the `v-if` directive is false.
+
+Example:
+
+```html
+<div v-if="isAuthenticated">Welcome, user!</div> 
+<div v-else>Please login</div>
+```
+
+Here, if isAuthenticated is true, it shows the first message of "Welcome, user!", otherwise it shows the second message of "Please login".
+
+In summary:
+- `v-if` shows content if a condition is true
+- `v-else` shows content if the condition is false
+
+### v-for directives
+The `v-for` directive in Vue.js is used to render a list of items by iterating over an array or an object. It's like a loop in JavaScript, but it's used directly in the HTML template to repeat a piece of the template for each item in the array or object.
+
+**Example - Using v-for to loop through an array:**
+
+Imagine you have an array of fruits and you want to display each fruit in a list. Here's how you can do it with v-for:
+
+**Step 1**: Define the Array
+In your Vue component script section, define an array of fruits:
+
+```javascript
+<script setup>
+const fruits = ['Apple', 'Banana', 'Cherry']
+</script>
+```
+
+**Step 2**: Use v-for in Template
+Use the v-for directive to iterate over the fruits array and display each fruit in a list:
+
+```html
+<template>
+    <ul>
+        <li v-for="fruit in fruits" :key="fruit">{{ fruit }}</li>
+    </ul>
+</template>
+```
+
+**How It Works**
+- `v-for="fruit in fruits"`: This tells Vue to loop through each item in the fruits array. For each item, it will create a new `<li>` element.
+- fruit: This is a variable that represents the current item in the loop. You can name it whatever you like (e.g., item, fruit, element).
+- `:key="fruit"`: The key attribute helps Vue keep track of which items have changed, been added, or removed. It's a good practice to provide a unique key for each item. Here, we use fruit as the key because it's unique in this simple example.
+
+**Example - Using v-for to loop through an object:**
+If your data is an array of objects, you can access properties of each object:
+
+Imagine you have an array of objects of employees details such as their id, name, and occupation and you want to display each employee details in a table. Here's how you can do it with v-for:
+
+**Step 1**: Define the Array of Objects of employees
+
+```javascript
+<script setup>
+
+    const employees = [
+        { id: 1, name: 'John Doe', occupation: 'Teacher' },
+        { id: 2, name: 'Jane Smith', occupation: 'Doctor' },
+        { id: 3, name: 'Tom Johnson', occupation: 'Engineer' }
+    ]
+
+</script>
+```
+
+**Step 2**: Use v-for in Template
+Use the `v-for` directive to iterate over the employees array of objects and display each employee details in a table row:
+
+```html
+<template>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Occupation</th>
+        </tr>
+
+        <tr v-for="employee in employees" :key="employee.id">
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.occupation }}</td>
+        </tr>
+    </table>
+</template>
+```
+
+**How It Works**:
+- `v-for="employee in employees"`: This tells Vue to loop through each item or object in the employees array.
+- employee: Represents the current object in the loop.
+- `:key="employee.id"`: The key attribute uses `employee.id` to uniquely identify each item in the list.
+- `<td>{{ employee.id }}</td>, <td>{{ employee.name }}</td>, <td>{{ employee.occupation }}</td>`: Display the id, name and occupation of an employee as the table data.
+
+**Summary**
+- `v-for`: Used to loop through arrays or objects in the template.
+- Key: Always provide a unique key for each item to help Vue efficiently update the DOM.
+
+Using `v-for`, you can easily create dynamic lists in your Vue templates by iterating over arrays or objects.
+
 
 # Props in Vue Js
 Props are used to pass data from a parent component (view) to another component called the child component. For example we can have a parent component/view called ProductsView that displays variety of products in a card view. We can also have a child component called ProductCard.
