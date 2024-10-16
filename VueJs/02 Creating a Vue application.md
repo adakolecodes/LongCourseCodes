@@ -8,16 +8,27 @@ npm create vue@latest
 This command will install and execute create-vue. You will be presented with the following prompts for several optional features. Select 'No' for all, except for "Add Vue Router..." where you select 'Yes'. Use the arrow right and left to naviagate selections and enter to proceed to next:
 
 ✔ Project name: … `your-project-name`
+
 ✔ Package name: … `same-with-project-name`
+
 ✔ Add TypeScript? … No / Yes
+
 ✔ Add JSX Support? … No / Yes
+
 ✔ Add Vue Router for Single Page Application development? … No / Yes
+
 ✔ Add Pinia for state management? … No / Yes
+
 ✔ Add Vitest for Unit testing? … No / Yes
+
 ✔ Add an End-to-End Testing Solution? … No / Cypress / Nightwatch / Playwright
+
 ✔ Add ESLint for code quality? … No / Yes
+
 ✔ Add Prettier for code formatting? … No / Yes
+
 ✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
+
 
 3. Once the project is created, navigate to the just created project by typing cd `your-project-name` in your command prompt and enter
 4. Type `npm install` to install dependencies
